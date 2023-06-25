@@ -1,15 +1,10 @@
-# this a defined function for calculating gross, tax and net pay. the program expects the user to input hour and rate and then does the other computing by itself.
-def pay (hour, rate) :
-    payroll = float(hour) * float(rate)
-    tax = payroll // 100 * 15
-    net_pay = payroll - tax 
-    print("GrossPay: USD",payroll)
-    print("IncomeTax (15%): USD", tax)
-    print("NetPay: USD",net_pay)
-    
-# Below code is meant for user input and then call the pay function to do the math.
-
-hour = input("Hours Worked: ")
-rate = input("Rate per hour: ")
-pay(hour, rate)
-
+# this program helps to find the largest number in a list and also counts the number of items in the list
+highest_num = 0
+counter = 0
+print("Lowest Number = ", highest_num)
+for digits in [23, 15, 74, 9, 205, 11] :
+    counter = counter + 1
+    if digits > highest_num:
+        highest_num = digits
+    print(counter, highest_num, digits)
+print("Higest Number = ", highest_num)
